@@ -1,19 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
     <header>
-        <h1>Pustakalay</h1>
-        <button class="Add">Add +</button>
+      <h1>Pustakalay</h1>
+      <button class="Add">Add +</button>
     </header>
     <main>
+      <section class="formm">
+        <form action="#" method="post">
+          <div>
+            <label for="book_name">Book Name</label>
+            <input type="text" id="book_name" name="book_name" required/>
+          </div>
 
+          <div>
+            <label for="Author">Author</label>
+            <input type="text" id="author_name" name="author_name" required/>
+          </div>
+
+          <div>
+            <label for="pages">pages</label>
+            <input type="number" id="pages" name="pages" required/>
+          </div>
+
+          <div class="readdd">
+            <p>Read ?</p>
+            <input type="radio" id="read" name="read" value="read" />
+            <label for="yess">YES</label><br />
+            <input
+              type="radio"
+              id="not_read"
+              name="not_read"
+              value="not_read"
+            />
+            <label for="not_read">NO!</label><br />
+          </div>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

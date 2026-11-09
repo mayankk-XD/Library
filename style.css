@@ -29,3 +29,40 @@ button{
     border-radius: 1em;
     font-size: 1em;
 }
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.formm{
+    display: none;
+    height: auto;
+    width: 60vw;
+    border: black solid 1px;
+    border-radius: 2em;
+    padding: 1.5em; 
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    width: 100%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+.readdd{
+    display: block;
+}
+
+@media(max-width : 600px){
+    section{
+        width: 80vw;
+    }
+}
