@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -7,46 +8,49 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <header>
       <h1>Pustakalay</h1>
       <button class="Add">Add +</button>
     </header>
+
     <main>
       <section class="formm">
         <form action="#" method="post">
           <div>
             <label for="book_name">Book Name</label>
-            <input type="text" id="book_name" name="book_name" required/>
+            <input type="text" id="book_name" name="book_name" required />
           </div>
 
           <div>
-            <label for="Author">Author</label>
-            <input type="text" id="author_name" name="author_name" required/>
+            <label for="author_name">Author</label>
+            <input type="text" id="author_name" name="author_name" required />
           </div>
 
           <div>
-            <label for="pages">pages</label>
-            <input type="number" id="pages" name="pages" required/>
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" name="pages" required />
           </div>
 
           <div class="readdd">
             <p>Read ?</p>
-            <input type="radio" id="read" name="read" value="read" />
-            <label for="yess">YES</label><br />
-            <input
-              type="radio"
-              id="not_read"
-              name="not_read"
-              value="not_read"
-            />
-            <label for="not_read">NO!</label><br />
+            <label for="read">YES</label>
+            <input type="radio" id="read" name="read" value="yes" />
+            <label for="not_read">NO!</label>
+            <input type="radio" id="not_read" name="read" value="no" />
           </div>
 
-          <button type="submit">Submit</button>
+          <div class="formButtons">
+            <button type="submit">Submit</button>
+            <button type="button" class="closeForm">&times;</button>
+          </div>
         </form>
       </section>
+
+      <section class="bookShell">
+        <div class="library"></div>
+      </section>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>

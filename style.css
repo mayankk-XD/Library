@@ -7,7 +7,6 @@
 body{
     min-height: 100vh;
     width: 100%;
-    background-color: #f1faee;
 }
 
 header{
@@ -33,6 +32,7 @@ button{
 main{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .formm{
@@ -42,6 +42,12 @@ main{
     border: black solid 1px;
     border-radius: 2em;
     padding: 1.5em; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: #d9eeee;
 }
 
 form{
@@ -55,14 +61,67 @@ form{
 form div{
     display: flex;
     flex-direction: column;
+    gap:0.5em;
+}
+
+input:not([type="radio"]) {
+    height: 2em;
+    border-radius: 0.5em;
+}
+.formButtons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .readdd{
     display: block;
 }
 
-@media(max-width : 600px){
-    section{
+.bookShell{
+    width: 100%;
+    min-height: calc(100vh - 5em);
+    background-color: #f1faee;
+}
+
+.bookShell {
+    width: 100%;
+    min-height: calc(100vh - 5em);
+    padding: 1em;
+}
+
+.library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 250px));
+    grid-auto-flow: row;
+    gap: 1.5rem;
+    justify-content: start;
+}
+
+.bookCard {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #a8dadc;
+    border-radius: 1em;
+    padding: 2.5em 1em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    min-height: 10em;
+}
+
+.removeButton {
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+}
+
+@media(max-width: 600px){
+    .formm{
         width: 80vw;
     }
 }
